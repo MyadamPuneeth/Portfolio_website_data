@@ -9,11 +9,11 @@ def save_data():
     data = request.get_json()['data']
 
     # Save the data to a file in the Git repository
-    with open('/path/to/your/repo/myData.txt', 'a') as f:
+    with open('https://github.com/MyadamPuneeth/Portfolio_website_data/blob/main/data.txt', 'a') as f:
         f.write(data + '\n')
 
     # Commit the changes
-    os.system("cd /path/to/your/repo && git add . && git commit -m 'Add new data' && git push")
+    os.system("https://github.com/MyadamPuneeth/Portfolio_website_data && git add . && git commit -m 'Add new data' && git push")
 
     # Send a response back to the client
     return jsonify({'message': 'Data received successfully'})
